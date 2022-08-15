@@ -54,7 +54,9 @@
         <div class="container flex flex-wrap items-center justify-center px-4 py-8 mx-auto lg:justify-between">
             <div class="flex flex-wrap justify-center">
                 <ul class="flex items-center space-x-4 text-white">
-                    <li>Home</li>
+                    <a class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 md:text-2xl hover:text-green-400" href="/">
+                        E-Reserve
+                    </a>
                     <li>About</li>
                     <li>Contact</li>
                     <li>Terms</li>

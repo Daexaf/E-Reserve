@@ -25,13 +25,28 @@
                             <th scope="col" class="py-3 px-6 text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                                 Jumlah Tamu
                             </th>
-                            <th scope="col" class="relative py-3 px-6">
-                                <span class="sr-only">edit</span>
-                            </th>
                         </tr>
                     </thead>
                     <tbody>
 
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                {{$thanks->last_name}}
+                            </td>
+                            <td class="py-4 px-6" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                {{$thanks->email}}
+                            </td>
+                            <td class="py-4 px-6" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                {{$thanks->res_date}}
+                            </td>
+                            <td class="py-4 px-6" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                {{$thanks->table->name}}
+                            </td>
+                            <td class="py-4 px-6" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center">
+                                {{$thanks->guest_number}}
+                            </td>
+
+                        </tr>
                     </tbody>
                 </table>
             </div>

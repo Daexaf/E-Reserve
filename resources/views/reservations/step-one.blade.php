@@ -14,6 +14,7 @@
                                 <div class="w-40 p-1 text-xs font-medium leading-none text-center text-blue-100 bg-blue-600 rounded-full">
                                     Langkah pertama</div>
                             </div>
+
                             <form method="POST" action="{{route('reservations.store.step.one')}}">
                                 @csrf
                                 <div class="sm:col-span-6">

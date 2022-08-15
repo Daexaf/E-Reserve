@@ -46,7 +46,7 @@
                 </div>
                 <div class="w-full md:w-1/2">
                     <div class="w-full h-auto overflow-hidden rounded-md shadow-xl sm:rounded-xl">
-                        <img src="https://cdn.pixabay.com/photo/2017/08/03/13/30/people-2576336_960_720.jpg" />
+                        <img src="assets/images/ayam.jpg" alt="image">
                     </div>
                 </div>
             </div>
@@ -123,22 +123,22 @@
         </div>
         <div class="container grid gap-4 mx-auto lg:grid-cols-3">
             <div class="w-full rounded">
-                <img src="https://cdn.pixabay.com/photo/2013/07/12/19/20/sushi-154590__340.png" alt="image">
+                <img src="assets/images/ayam.jpg" alt="image">
             </div>
             <div class="w-full rounded">
-                <img src="https://cdn.pixabay.com/photo/2015/08/20/19/18/market-897990__340.jpg" alt="image">
+                <img src="assets/images/geprek.jpg" alt="image">
             </div>
             <div class="w-full rounded">
-                <img src="https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706__340.jpg" alt="image">
+                <img src="assets/images/lantai_2.jpg" alt="image">
             </div>
             <div class="w-full rounded">
-                <img src="https://cdn.pixabay.com/photo/2016/11/23/18/31/pasta-1854245__340.jpg" alt="image">
+                <img src="assets/images/lantai_3.jpg" alt="image">
             </div>
             <div class="w-full rounded">
-                <img src="https://cdn.pixabay.com/photo/2015/07/12/14/26/coffee-842020__340.jpg" alt="image">
+                <img src="assets/images/ayam.jpg" alt="image">
             </div>
             <div class="w-full rounded">
-                <img src="https://cdn.pixabay.com/photo/2016/11/23/18/31/pasta-1854245__340.jpg" alt="image">
+                <img src="assets/images/ayam.jpg" alt="image">
             </div>
         </div>
     </section>
