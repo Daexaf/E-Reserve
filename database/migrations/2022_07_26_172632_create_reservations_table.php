@@ -20,7 +20,8 @@ return new class extends Migration
             $table->string('email');
             $table->string('number_telp');
             $table->dateTime('res_date');
-            $table->unsignedBigInteger('table_id');
+            $table->unsignedBigInteger('table_id')->nullable();
+            $table->foreign('table_id')->references('id')->on('tables');
             $table->integer('guest_number');
             $table->timestamps();
         });

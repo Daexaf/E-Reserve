@@ -15,12 +15,12 @@
                                     Langkah pertama</div>
                             </div>
 
-                            <form method="POST" action="{{route('reservations.store.step.one')}}">
+                            <form method="POST" action="{{route('reservations.step.two')}}">
                                 @csrf
                                 <div class="sm:col-span-6">
                                     <label for="first_name" class="block text-sm font-medium text-gray-700"> Nama Depan </label>
                                     <div class="mt-1">
-                                        <input type="text" id="first_name" name="first_name" value="{{$reservation->first_name ?? ''}}" class="block w-full transition duration-150 ease-in-out appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
+                                        <input type="text" id="first_name" name="first_name" value="{{old('first_name')}}" class="block w-full transition duration-150 ease-in-out appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
                                     </div>
                                     @error('first_name')
                                     <div class="text-sm text-red-400">{{ $message }}</div>
@@ -30,7 +30,7 @@
                                 <div class="sm:col-span-6">
                                     <label for="last_name" class="block text-sm font-medium text-gray-700"> Nama Belakang </label>
                                     <div class="mt-1">
-                                        <input type="text" id="last_name" name="last_name" value="{{$reservation->last_name ?? ''}}" class="block w-full transition duration-150 ease-in-out appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
+                                        <input type="text" id="last_name" name="last_name" value="{{old('last_name')}}" class="block w-full transition duration-150 ease-in-out appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
                                     </div>
                                     @error('last_name')
                                     <div class="text-sm text-red-400">{{ $message }}</div>
@@ -40,7 +40,7 @@
                                 <div class="sm:col-span-6">
                                     <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
                                     <div class="mt-1">
-                                        <input type="text" id="email" name="email" value="{{$reservation->email ?? ''}}" class="block w-full transition duration-150 ease-in-out appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
+                                        <input type="text" id="email" name="email" value="{{old('email')}}" class="block w-full transition duration-150 ease-in-out appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
                                     </div>
                                     @error('email')
                                     <div class="text-sm text-red-400">{{ $message }}</div>
@@ -50,7 +50,7 @@
                                 <div class="sm:col-span-6">
                                     <label for="number_telp" class="block text-sm font-medium text-gray-700"> Nomor Telepon </label>
                                     <div class="mt-1">
-                                        <input type="text" id="number_telp" name="number_telp" value="{{$reservation->number_telp ?? ''}}" class="block w-full transition duration-150 ease-in-out appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
+                                        <input type="text" id="number_telp" name="number_telp" value="{{old('number_telp')}}" class="block w-full transition duration-150 ease-in-out appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
                                     </div>
                                     @error('number_telp')
                                     <div class="text-sm text-red-400">{{ $message }}</div>
@@ -60,7 +60,7 @@
                                 <div class="sm:col-span-6">
                                     <label for="res_date" class="block text-sm font-medium text-gray-700"> Tanggal Reservasi </label>
                                     <div class="mt-1">
-                                        <input type="datetime-local" id="res_date" name="res_date" min="{{$min_date->format('Y-m-d\TH:i:s')}}" max="{{$max_date->format('Y-m-d\TH:i:s')}}" value="{{$reservation ? $reservation->res_date->format('Y-m-d\TH:i:s') : ''}}" class="block w-full transition duration-150 ease-in-out appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
+                                        <input type="datetime-local" id="res_date" name="res_date" min="{{$min_date->format('Y-m-d\TH:i:s')}}" max="{{$max_date->format('Y-m-d\TH:i:s')}}" value="{{old('res_date')}}" class="block w-full transition duration-150 ease-in-out appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
                                     </div>
                                     <span class="text-xs">Tolong Pilih waktu antara 11 Pagi - 10 Malam</span>
                                     @error('res_date')
@@ -68,10 +68,10 @@
                                     @enderror
                                 </div>
 
-                                <div class="sm:col-span-6 mt-2">
+                                <div class=" sm:col-span-6 mt-2">
                                     <label for="guest_number" class="block text-sm font-medium text-gray-700"> Jumlah Tamu </label>
                                     <div class="mt-1">
-                                        <input type="number" id="guest_number" name="guest_number" value="{{$reservation->guest_number ?? ''}}" class="block w-full transition duration-150 ease-in-out appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
+                                        <input type="number" id="guest_number" name="guest_number" value="{{old('phone')}}" class="block w-full transition duration-150 ease-in-out appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
                                     </div>
                                     @error('guest_number')
                                     <div class="text-sm text-red-400">{{ $message }}</div>

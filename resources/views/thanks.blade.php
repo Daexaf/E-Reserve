@@ -2,7 +2,7 @@
     <div class="container w-full px-5 py-6 mx-auto">
         <h1>Terima Kasih</h1>
         <p>Reservasi anda sedang di proses</p>
-        <p>Silahkan datang sesuai waktu yang dipilih</p>
+        <p>Silahkan screen shoot halaman ini dan datang sesuai waktu yang dipilih</p>
     </div>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -31,19 +31,19 @@
 
                         <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                             <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                {{$thanks->last_name}}
+                                {{$res_id->first_name}} {{$res_id->last_name}}
                             </td>
                             <td class="py-4 px-6" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                {{$thanks->email}}
+                                {{$res_id->email}}
                             </td>
                             <td class="py-4 px-6" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                {{$thanks->res_date}}
+                                {{$res_id->res_date}}
                             </td>
                             <td class="py-4 px-6" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                {{$thanks->table->name}}
+                                {{$res_id->table->name}}
                             </td>
                             <td class="py-4 px-6" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center">
-                                {{$thanks->guest_number}}
+                                {{$res_id->guest_number}}
                             </td>
 
                         </tr>

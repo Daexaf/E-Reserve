@@ -16,11 +16,4 @@ class WelcomeController extends Controller
 
         return view('welcome', compact('specials'));
     }
-
-    public function thanks(Request $request, $id)
-    {
-        // $ty = Reservation::where('id', $id)->get();
-        $thanks = Reservation::find($id);
-        return view('thanks', ['thanks' => $thanks]);
-    }
 }
