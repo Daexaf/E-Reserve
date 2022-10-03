@@ -1,3 +1,4 @@
+<title>E-Reserve</title>
 <x-guest-layout>
     <div class="container w-full px-5 py-6 mx-auto">
         <div class="flex items-center min-h-screen bg-gray-50">
@@ -20,7 +21,7 @@
                                 <div class="sm:col-span-6">
                                     <label for="first_name" class="block text-sm font-medium text-gray-700"> Nama Depan </label>
                                     <div class="mt-1">
-                                        <input type="text" id="first_name" name="first_name" value="{{old('first_name')}}" class="block w-full transition duration-150 ease-in-out appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
+                                        <input type="text" id="first_name" name="first_name" value="{{old('first_name')}}" class="block w-full transition duration-150 ease-in-out appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" required />
                                     </div>
                                     @error('first_name')
                                     <div class="text-sm text-red-400">{{ $message }}</div>
@@ -71,7 +72,7 @@
                                 <div class=" sm:col-span-6 mt-2">
                                     <label for="guest_number" class="block text-sm font-medium text-gray-700"> Jumlah Tamu </label>
                                     <div class="mt-1">
-                                        <input type="number" id="guest_number" name="guest_number" value="{{old('phone')}}" class="block w-full transition duration-150 ease-in-out appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
+                                        <input type="number" id="guest_number" name="guest_number" value="{{old('guest_number')}}" class="block w-full transition duration-150 ease-in-out appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('name') border-red-400 @enderror" />
                                     </div>
                                     @error('guest_number')
                                     <div class="text-sm text-red-400">{{ $message }}</div>

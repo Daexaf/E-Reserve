@@ -1,3 +1,4 @@
+<title>E-Reserve</title>
 <x-admin-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -48,7 +49,7 @@
                                 {{$reservation->res_date}}
                             </td>
                             <td class="py-4 px-6" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                {{$reservation->table->name}}
+                                {{$reservation->table_id}}
                             </td>
                             <td class="py-4 px-6" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center">
                                 {{$reservation->guest_number}}

@@ -1,3 +1,4 @@
+<title>E-Reserve</title>
 <x-guest-layout>
     <div class="container w-full px-5 py-6 mx-auto">
         <div class="flex items-center min-h-screen bg-gray-50">
@@ -37,7 +38,7 @@
                                 </div>
 
                                 <div class="mt-6 p-4 flex justify-between">
-                                    <a href="{{route('reservations.step.one')}}" class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded text-white">sebelumnya</a>
+                                    <a href="{{route('reservations.step.one')}}" class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded text-white">Sebelumnya</a>
                                     <button type="submit" class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 rounded text-white
                             ">Pesan</button>
                                 </div>

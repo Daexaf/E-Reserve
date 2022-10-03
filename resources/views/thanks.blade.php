@@ -2,7 +2,7 @@
     <div class="container w-full px-5 py-6 mx-auto">
         <h1>Terima Kasih</h1>
         <p>Reservasi anda sedang di proses</p>
-        <p>Silahkan screen shoot halaman ini dan datang sesuai waktu yang dipilih</p>
+        <p>Silahkan screenshot halaman ini untuk bukti dan datang sesuai waktu yang tertera.</p>
     </div>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
